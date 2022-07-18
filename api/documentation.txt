@@ -1,0 +1,31 @@
+@app.route("/", methods=["POST", "GET"])
+***("/") main root for first page
+----------------------------------------------------
+@app.route("/patient",methods=['GET'])
+***("/patient") root for  get all patient in system
+*** methods is GET
+-------------------------------------------------------
+@app.route("/patient/<id>",methods=['GET'])
+***("/patient/<id>") root for get specific patient from all patient in system
+*** methods is GET
+-------------------------------------------------------
+@app.route("/check", methods=["POST"])  
+***("/check") root for  check person is a patient  or not in system
+*** methods is POST
+------------------------------------------------------------------------
+@app.route("/patient", methods=["POST"])  
+***("/patient") root for  add apatient in system
+*** methods is POST
+-----------------------------------------------------------------------------
+@app.route("/patient/<id>",methods=['DELETE']) 
+***("/patient/<id>") root for delete specific patient from all patient in system
+*** methods is DELETE
+---------------------------------------------------------------------------------
+@app.route("/patient/<id>", methods=["PUT"]) 
+***("/patient/<id>") root for update specific patient from all patient in system
+*** methods is PUT
+--------------------------------------------------------------------------
+@app.route("/prediction", methods=["POST"]) 
+***("/prediction") root for  deploy machine learning model and return prediction
+*** methods is POST
+-----------------------------------------------------------------------------
